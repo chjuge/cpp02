@@ -25,8 +25,8 @@
 *.la
 *.a
 *.lib
-
 # Executables
 *.exe
 *.out
 *.app
+*fixed_point
