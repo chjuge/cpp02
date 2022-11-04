@@ -6,7 +6,7 @@
 /*   By: mproveme <mproveme@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/19 18:30:22 by mproveme          #+#    #+#             */
-/*   Updated: 2022/10/19 19:40:12 by mproveme         ###   ########.fr       */
+/*   Updated: 2022/11/04 12:24:21 by mproveme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,9 +23,11 @@ private:
 
 public:
 	Fixed();
-	~Fixed();
 	Fixed(Fixed const &other);
+	~Fixed();
+
 	Fixed &operator=(Fixed const &other);
+	
 	int getRawBits(void) const;
 	void setRawBits(int const raw);
 };
