@@ -6,7 +6,7 @@
 /*   By: mproveme <mproveme@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/19 18:30:22 by mproveme          #+#    #+#             */
-/*   Updated: 2022/10/20 13:11:11 by mproveme         ###   ########.fr       */
+/*   Updated: 2022/11/04 12:49:01 by mproveme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,11 +30,6 @@ public:
 	~Fixed();
 
 	Fixed &	operator =(Fixed const &other);
-
-	Fixed	operator +(Fixed const &other);
-	Fixed	operator -(Fixed const &other);
-	Fixed	operator *(Fixed const &other);
-	Fixed	operator /(Fixed const &other);
 	
 	Fixed	operator +(Fixed const &other) const;
 	Fixed	operator -(Fixed const &other) const;
@@ -43,15 +38,8 @@ public:
 
 	Fixed & operator ++();
 	Fixed & operator --();
-	Fixed operator ++(int par);
-	Fixed operator --(int par);
-
-	bool	operator <(Fixed const & src);
-	bool	operator >(Fixed const & src);
-	bool	operator >=(Fixed const & src);
-	bool	operator <=(Fixed const & src);
-	bool	operator ==(Fixed const & src);
-	bool	operator !=(Fixed const & src);
+	Fixed operator ++(int);
+	Fixed operator --(int);
 
 	bool	operator >(Fixed const & src) const;
 	bool	operator <(Fixed const & src) const;
@@ -66,8 +54,6 @@ public:
 	float toFloat(void) const;
 	int toInt(void) const;
 
-	static Fixed & min (Fixed & p1, Fixed & p2);
-	static Fixed & max (Fixed & p1, Fixed & p2);
 	static Fixed const & max (Fixed const & p1, Fixed const & p2);
 	static Fixed const & min (Fixed const & p1, Fixed const & p2);
 };
