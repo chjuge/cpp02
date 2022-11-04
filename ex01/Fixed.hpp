@@ -6,7 +6,7 @@
 /*   By: mproveme <mproveme@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/19 18:30:22 by mproveme          #+#    #+#             */
-/*   Updated: 2022/10/19 20:52:26 by mproveme         ###   ########.fr       */
+/*   Updated: 2022/11/04 12:33:52 by mproveme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,6 +39,5 @@ public:
 };
 
 std::ostream & operator<<(std::ostream &stream, Fixed const &src);
-
 
 #endif
